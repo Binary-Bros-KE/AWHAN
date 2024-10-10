@@ -6119,7 +6119,7 @@ a.close.disabled {
   float: left;
   width: 100%;
   margin-right: -100%;
-  backface-visibility: hidden;
+  backface-visibility: visible;
   transition: transform 0.6s ease-in-out;
 }
 
@@ -9772,15 +9772,15 @@ h6,
 
 .section-title {
   position: relative;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .section-title::before {
   position: absolute;
   content: "";
-  top: 10px;
+  top: 20px;
   left: 0;
-  width: 45px;
+  width: 25px;
   height: 2px;
   background: #0193E8;
 }
@@ -9788,9 +9788,9 @@ h6,
 .section-title::after {
   position: absolute;
   content: "";
-  top: 14px;
+  top: 24px;
   left: 0;
-  width: 45px;
+  width: 25px;
   height: 2px;
   background: #23A036;
 }
@@ -9976,6 +9976,10 @@ h6,
 
 .bg-about {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/about.jpg), no-repeat center center;
+  background-size: cover;
+}
+.bg-who-we-are {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/who-we-are.jpg), no-repeat center center;
   background-size: cover;
 }
 
